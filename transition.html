@@ -31,14 +31,26 @@
   height: 100px;
   background-color: purple;
   -webkit-transition-property: transform; /* Safari */
-  -webkit-transition-duration: 2s;
+  -webkit-transition-duration: 3s;
   transition-property: transform;
-  transition-duration: 2s;
+  transition-duration: 3s;
 }
 #rotation_changer:hover {
-  -ms-transform: rotate(45deg); /* IE 9 */
-  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-  transform: rotate(45deg);
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+}
+#length_changer {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  -webkit-transition-property: height; /* Safari */
+  -webkit-transition-duration: 2s;
+  transition-property: height;
+  transition-duration: 2s;
+}
+#length_changer:hover {
+  height: 200px;
 }
 </style>
 </head>
@@ -46,5 +58,6 @@
   <div id="color_changer"></div>
   <div id="size_changer"></div>
   <div id="rotation_changer"></div>
+  <div id="length_changer"></div>
 </body>
 </html>
